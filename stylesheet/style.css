@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    background: lightgray;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado img{
+    height: 70px;
+    width: auto;
+}
+
+.menu{
+    line-height: 65px;
+    margin-right: 15px;
+}
+
+.menu a{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.menu .btnc{
+    background-color: gray;
+    padding: 12px;
+    color: white;
+    border-radius: 15px;
+}
+
+.carousel-inner img{
+    height: 75vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel-control-prev{
+    margin-left: 250px;
+}
+
+.carousel-control-next{
+    margin-right: 250px;
+}
+
+.tarjetita{
+    width: 1200px;
+    height: 450px;
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
+    border-radius: 25px;
+}
+
+.personaje{
+    padding: 10px;
+}
+
+.personaje h1{
+    text-align: center;
+    color: royalblue;
+    font-size: 40px;
+    font-weight: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.personaje p{
+    line-height: 35px;
+    font-size: 18px;
+}
+
+
+
+.carousel-inner{
+    background: #000;
+}
+
+#btn{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    height: 35px;
+    border-radius: 10px;
+    background: royalblue;
+    color: wheat;
+    border: 2px dotted white;
+}
+
+section{
+    display: flex;
+    width: 1300px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease-in-out;
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 350px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.pie{
+    background: gray;
+    height: 200px;
+    display: flex;
+}
+
+.pie img{
+    height: 50px;
+}
+
+.pie a{
+    display: flex;
+    margin: auto;
+}
