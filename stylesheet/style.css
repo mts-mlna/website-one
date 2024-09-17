@@ -4,35 +4,42 @@
     box-sizing: border-box;
 }
 
+body{
+    background: rgb(1, 10, 19) !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: rgb(1, 10, 19);
+}
+
 .encabezado{
-    background: lightgray;
+    background: #111;
     height: 70px;
     display: flex;
     justify-content: space-between;
 }
 
 .encabezado img{
-    height: 70px;
+    height: 50px;
     width: auto;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
 .menu{
-    line-height: 65px;
+    line-height: 70px;
     margin-right: 15px;
 }
 
 .menu a{
-    margin-left: 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+    padding: 10px;
     text-decoration: none;
     font-size: 18px;
-    color: #000;
-}
-
-.menu .btnc{
-    background-color: gray;
-    padding: 12px;
-    color: white;
-    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .carousel-inner img{
@@ -50,13 +57,15 @@
 }
 
 .tarjetita{
-    width: 1200px;
-    height: 450px;
-    background: gray;
+    padding: 25px;
+    width: 1100px;
+    height: auto;
+    background: rgb(23, 26, 30);
     display: flex;
     justify-content: space-between;
     margin: 25px auto;
     border-radius: 25px;
+    border: 1px solid rgb(193, 165, 87);
 }
 
 .personaje{
@@ -65,32 +74,26 @@
 
 .personaje h1{
     text-align: center;
-    color: royalblue;
+    color: rgb(193, 165, 87);
     font-size: 40px;
     font-weight: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .personaje p{
-    line-height: 35px;
+    color: #e5dbc8;
     font-size: 18px;
 }
 
 
-
-.carousel-inner{
-    background: #000;
-}
-
 #btn{
     margin-top: 10px;
     width: 100%;
-    border-radius: 10px;
     height: 35px;
-    border-radius: 10px;
-    background: royalblue;
+    background: rgb(1, 10, 19);
     color: wheat;
-    border: 2px dotted white;
+    border: 1px solid rgb(132, 105, 62);
+    font-weight: bold;
 }
 
 section{
@@ -100,6 +103,7 @@ section{
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+    margin-bottom: 100px;
 }
 
 section img{
@@ -107,6 +111,7 @@ section img{
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
+    border: 1px rgb(193, 165, 87) solid;
     transition: .5s ease-in-out;
 }
 
@@ -118,7 +123,8 @@ section img:hover{
 }
 
 .pie{
-    background: gray;
+    border-top:10px solid #343434;
+    background: #171717;
     height: 200px;
     display: flex;
 }
@@ -130,4 +136,21 @@ section img:hover{
 .pie a{
     display: flex;
     margin: auto;
+}
+
+.contact{
+    background: rgb(22, 178, 216);
+    color: #000 !important;
+}
+
+.contact:hover{
+    background: rgb(11, 196, 226);
+}
+
+section img:first-child{
+    border-radius: 25px 0 0 25px;
+}
+
+section img:last-child{
+    border-radius: 0 25px 25px 0;
 }
